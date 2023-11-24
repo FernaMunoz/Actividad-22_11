@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b5f9213-3e25-4c10-a51e-e9eb291d897e" name="Changes" comment="ventanas">
+    <list default="true" id="0b5f9213-3e25-4c10-a51e-e9eb291d897e" name="Changes" comment="ventanas inicio">
+      <change afterPath="$PROJECT_DIR$/src/main/java/guis/VentanaBuscar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guis/VentanaRegistrar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guis/ventanaAgregar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interfaces/ActionListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guis/ventanaInicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guis/ventanaInicio.java" afterDir="false" />
     </list>
@@ -16,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -79,12 +84,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700688221018</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ventanas inicio">
+      <option name="closed" value="true" />
+      <created>1700836837506</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700836837506</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="paquetes" />
     <MESSAGE value="ventanas" />
-    <option name="LAST_COMMIT_MESSAGE" value="ventanas" />
+    <MESSAGE value="ventanas inicio" />
+    <option name="LAST_COMMIT_MESSAGE" value="ventanas inicio" />
   </component>
 </project>
