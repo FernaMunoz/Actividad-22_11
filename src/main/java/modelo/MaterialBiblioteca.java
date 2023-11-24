@@ -1,6 +1,4 @@
 package modelo;
-import java.util.ArrayList;
-import java.util.List;
 
 public abstract  class MaterialBiblioteca {
     private int id;

@@ -39,12 +39,12 @@ public class ventanaAgregar extends JFrame implements ActionListener {
         if(e.getActionCommand().equals("Libro")){
             VentanaLibro ventanaLibro = new VentanaLibro();
             ventanaLibro.setVisible(true);
-        if(e.getActionCommand().equals("Revista")){
+        } else if(e.getActionCommand().equals("Revista")){
             VentanaRevista ventanaRevista = new VentanaRevista();
             ventanaRevista.setVisible(true);
             }
         }
     }
-}
+
 
 

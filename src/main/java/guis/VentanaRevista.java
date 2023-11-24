@@ -1,5 +1,4 @@
 package guis;
-
 import javax.swing.*;
 
 public class VentanaRevista extends JFrame {
