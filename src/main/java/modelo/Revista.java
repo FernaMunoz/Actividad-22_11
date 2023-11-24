@@ -1,5 +1,8 @@
 package modelo;
 import interfaces.Prestable;
+
+import javax.swing.*;
+
 public class Revista extends MaterialBiblioteca implements Prestable{
     private String issn;
     private int numero;
