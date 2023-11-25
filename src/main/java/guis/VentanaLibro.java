@@ -1,16 +1,19 @@
 package guis;
+
+import datos.Biblioteca;
+import modelo.Libro;
+
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import modelo.Libro;
 
 public class VentanaLibro extends JFrame {
 
-    public VentanaLibro() {
-        // Configuración de la ventana
+    public VentanaLibro(Biblioteca biblioteca) {
+
         setTitle("Agregar Libro");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(600, 400);
         setLocationRelativeTo(null);
 
@@ -68,19 +71,30 @@ public class VentanaLibro extends JFrame {
         add(panel);
         setVisible(true);
 
-        botonAgregar.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        botonAgregar.addActionListener(e -> {
 
-                int id = Integer.parseInt(ID.getText());
-                String titulo = Titulo.getText();
-                String autor = Autor.getText();
-                String isbn = Isbn.getText();
-                String edicion = Edicion.getText();
+            int id = Integer.parseInt(ID.getText());
+            String titulo = Titulo.getText();
+            String autor = Autor.getText();
+            String isbn = Isbn.getText();
+            String edicion = Edicion.getText();
 
-                Libro nuevoLibro = new Libro(id, titulo, autor, isbn, edicion);
+            int numeroAntes = biblioteca.getCatalogo().size();
 
-                nuevoLibro.mostrarInformacion();
+            Libro nuevoLibro = new Libro(id, titulo, autor, isbn, edicion);
+
+            biblioteca.agregarMaterial(nuevoLibro);
+
+            nuevoLibro.mostrarInformacion();
+            dispose();
+
+            biblioteca.mostrarBiblioteca();
+
+            int numeroDespues = biblioteca.getCatalogo().size();
+            if (numeroDespues == numeroAntes + 1) {
+                System.out.println("El libro se ha agregado correctamente.");
+            } else {
+                System.out.println("Ha ocurrido un error al agregar el libro.");
             }
         });
     }

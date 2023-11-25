@@ -1,4 +1,6 @@
 package guis;
+import datos.Biblioteca;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -37,7 +39,8 @@ public class ventanaAgregar extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getActionCommand().equals("Libro")){
-            VentanaLibro ventanaLibro = new VentanaLibro();
+            Biblioteca biblioteca = new Biblioteca();
+            VentanaLibro ventanaLibro = new VentanaLibro(biblioteca);
             ventanaLibro.setVisible(true);
         } else if(e.getActionCommand().equals("Revista")){
             VentanaRevista ventanaRevista = new VentanaRevista();
