@@ -1,4 +1,6 @@
 package guis;
+import datos.Biblioteca;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -45,7 +47,8 @@ public class ventanaInicio extends JFrame implements ActionListener {
             ventanaAgregar VentanaAgregar = new ventanaAgregar();
             VentanaAgregar.setVisible(true);
         }else if (e.getActionCommand().equals("Buscar Productos")) {
-            VentanaBuscar ventanaBuscar = new VentanaBuscar();
+            Biblioteca biblioteca = new Biblioteca();
+            VentanaBuscar ventanaBuscar = new VentanaBuscar(biblioteca);
             ventanaBuscar.setVisible(true);
         } else if (e.getActionCommand().equals("Registrar préstamos y devoluciones")) {
             VentanaRegistrar ventanaRegistrar = new VentanaRegistrar();

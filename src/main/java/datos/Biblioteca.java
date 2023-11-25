@@ -1,4 +1,6 @@
 package datos;
+import modelo.Revista;
+import modelo.Libro;
 import modelo.MaterialBiblioteca;
 import modelo.Usuario;
 import java.util.ArrayList;
@@ -24,18 +26,19 @@ public class Biblioteca {
     public void agregarUsuario(Usuario usuario){
         usuarios.add(usuario);
     }
-    public MaterialBiblioteca buscarMateriaPorTitulo(String titulo){
-        for (MaterialBiblioteca material : catalogo){
-            if (material.getTitulo().equalsIgnoreCase(titulo)){
-                return material;
+    public List<MaterialBiblioteca> buscarMateriales (String criterio) {
+        List<MaterialBiblioteca> resultados = new ArrayList<>();
+        for (MaterialBiblioteca material : catalogo) {
+            if (material.getTitulo().equalsIgnoreCase(criterio)) {
+                resultados.add(material);
+            } else if (material.getAutor().equalsIgnoreCase(criterio)) {
+                resultados.add(material);
+            } else if (material instanceof Libro && ((Libro) material).getIsbn().equalsIgnoreCase(criterio)) {
+                resultados.add(material);
+            } else if (material instanceof Revista && ((Revista) material).getIssn().equalsIgnoreCase(criterio)) {
+                resultados.add(material);
             }
-        } return null;
+
+        }return resultados;
+        }
     }
-    public Usuario buscarUsuarioPorId(int idUsuario){
-        for ( Usuario usuario: usuarios){
-            if(usuario.getIdUsuario() == idUsuario){
-                return usuario;
-            }
-        } return null;
-    }
-}

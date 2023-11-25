@@ -3,7 +3,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import modelo.Revista;
 public class VentanaRevista extends JFrame {
     public VentanaRevista() {
@@ -72,10 +71,10 @@ public class VentanaRevista extends JFrame {
                 int id = Integer.parseInt(ID.getText());
                 String titulo = Titulo.getText();
                 String autor = Autor.getText();
-                String isbn = Issn.getText();
-                int edicion = Integer.parseInt(Numero.getText());
+                String issn = Issn.getText();
+                int numero = Integer.parseInt(Numero.getText());
 
-                Revista nuevaRevista = new Revista(id, titulo, autor, Issn, Numero);
+                Revista nuevaRevista = new Revista(id, titulo, autor, issn, numero);
 
                 nuevaRevista.mostrarInformacion();
             }

@@ -4,31 +4,32 @@ import interfaces.Prestable;
 import javax.swing.*;
 
 public class Revista extends MaterialBiblioteca implements Prestable{
-    private String issn;
-    private int numero;
-    public Revista (int id, String titulo, String autor, String issn, int numero) {
+    private String Issn;
+    private int Numero;
+    public Revista (int id, String titulo, String autor, String Issn, int Numero) {
         super(id, titulo, autor);
-        this.issn = issn;
-        this.numero = numero;
+        this.Issn = Issn;
+        this.Numero = Numero;
     }
     public String getIssn() {
-        return issn;
+        return Issn;
+    }
+
+    public int getNumero() {
+        return Numero;
+    }
+
+    public void setIssn(String Issn){
+        this.Issn = Issn;
         }
 
-    public int getNumero(){
-        return numero;
-        }
-    public void setIssn(String issn){
-        this.issn = issn;
-        }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
+    public void setNumero(int Numero) {
+        this.Numero = Numero;
     }
 
     @Override
     public void mostrarInformacion() {
-        System.out.println("Revista - ISSN: " + issn + ", Titulo: " + getTitulo() + ", Número: " + numero);
+        System.out.println("Revista - ISSN: " + Issn + ", Titulo: " + getTitulo() + ", Número: " + Numero);
 
     }
         @Override
