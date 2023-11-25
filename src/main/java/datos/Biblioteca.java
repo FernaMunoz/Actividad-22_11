@@ -26,19 +26,25 @@ public class Biblioteca {
     public void agregarUsuario(Usuario usuario){
         usuarios.add(usuario);
     }
-    public List<MaterialBiblioteca> buscarMateriales (String criterio) {
+    public List<MaterialBiblioteca> buscarPorTitulo(String titulo) {
         List<MaterialBiblioteca> resultados = new ArrayList<>();
+
         for (MaterialBiblioteca material : catalogo) {
-            if (material.getTitulo().equalsIgnoreCase(criterio)) {
-                resultados.add(material);
-            } else if (material.getAutor().equalsIgnoreCase(criterio)) {
-                resultados.add(material);
-            } else if (material instanceof Libro && ((Libro) material).getIsbn().equalsIgnoreCase(criterio)) {
-                resultados.add(material);
-            } else if (material instanceof Revista && ((Revista) material).getIssn().equalsIgnoreCase(criterio)) {
+            // Cambiar el operador == por el método equals
+            if (material.getTitulo().equals(titulo)) {
                 resultados.add(material);
             }
-
-        }return resultados;
         }
+
+        return resultados;
     }
+
+    public void mostrarBiblioteca() {
+        for (MaterialBiblioteca material : catalogo) {
+            System.out.println(material.toString());
+        }
+
+
+
+    }
+}

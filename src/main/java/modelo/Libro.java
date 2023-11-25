@@ -1,4 +1,5 @@
 package modelo;
+import modelo.MaterialBiblioteca;
 import interfaces.Prestable;
 public class Libro extends MaterialBiblioteca implements Prestable {
     private String isbn;
@@ -44,5 +45,15 @@ public class Libro extends MaterialBiblioteca implements Prestable {
         } else {
             System.out.println("El libro no está prestado");
         }
+    }
+    @Override
+    public String toString() {
+        return "Libro{" +
+                "id=" + getId() +
+                ", titulo='" + getTitulo() + '\'' +
+                ", autor='" + getAutor() + '\'' +
+                ", isbn='" + isbn + '\'' +
+                ", edicion='" + edicion + '\'' +
+                '}';
     }
 }

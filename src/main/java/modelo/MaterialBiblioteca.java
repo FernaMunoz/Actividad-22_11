@@ -44,6 +44,16 @@ public abstract  class MaterialBiblioteca {
     }
     public abstract void mostrarInformacion();
 
+    @Override
+    public String toString() {
+        // Implementa la lógica para convertir la información del material a una cadena
+        return "MaterialBiblioteca{" +
+                "titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                // Otros atributos...
+                '}';
+    }
+
 }
 
 
