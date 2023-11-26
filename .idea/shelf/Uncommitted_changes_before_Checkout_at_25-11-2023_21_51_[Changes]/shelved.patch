@@ -1,0 +1,19 @@
+Index: src/main/java/org/example/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example;\r\nimport guis.ventanaInicio;\r\nimport datos.Biblioteca;\r\nimport modelo.Libro;\r\nimport modelo.Revista;\r\nimport modelo.Usuario;\r\nimport java.util.List;\r\n\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n        ventanaInicio ventanaInicio = new ventanaInicio();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/example/Main.java b/src/main/java/org/example/Main.java
+--- a/src/main/java/org/example/Main.java	(revision 8ec960cb786f683b02e358d577fab95cffa86f3c)
++++ b/src/main/java/org/example/Main.java	(date 1700959884890)
+@@ -5,7 +5,7 @@
+ import modelo.Revista;
+ import modelo.Usuario;
+ import java.util.List;
+-
++//
+ public class Main {
+     public static void main(String[] args) {
+         ventanaInicio ventanaInicio = new ventanaInicio();
