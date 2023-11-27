@@ -1,4 +1,5 @@
 package guis;
+
 import datos.Biblioteca;
 
 import javax.swing.*;
@@ -7,15 +8,16 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ventanaAgregar extends JFrame implements ActionListener {
+
     public ventanaAgregar() {
         super("Agregar producto");
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(400, 300);
         setLocationRelativeTo(null);
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-
 
         JPanel panel = new JPanel();
         panel.setLayout(null);
+
         JLabel etiqueta = new JLabel("Agregar Nuevos Productos a la biblioteca", SwingConstants.CENTER);
 
         JButton BotonLibro = new JButton("Libro");
@@ -36,18 +38,20 @@ public class ventanaAgregar extends JFrame implements ActionListener {
 
         setVisible(true);
     }
+
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(e.getActionCommand().equals("Libro")){
+        if (e.getActionCommand().equals("Libro")) {
             Biblioteca biblioteca = new Biblioteca();
             VentanaLibro ventanaLibro = new VentanaLibro(biblioteca);
             ventanaLibro.setVisible(true);
-        } else if(e.getActionCommand().equals("Revista")){
+        } else if (e.getActionCommand().equals("Revista")) {
             VentanaRevista ventanaRevista = new VentanaRevista();
             ventanaRevista.setVisible(true);
-            }
         }
     }
+}
+
 
 
 

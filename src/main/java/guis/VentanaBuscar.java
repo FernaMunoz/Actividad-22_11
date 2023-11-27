@@ -1,4 +1,5 @@
 package guis;
+
 import datos.Biblioteca;
 import modelo.MaterialBiblioteca;
 
@@ -54,6 +55,7 @@ public class VentanaBuscar extends JFrame {
 
         });
     }
+
     private void buscarProducto() {
         String titulo = busqueda.getText();
         List<MaterialBiblioteca> resultados = biblioteca.buscarPorTitulo(titulo);
@@ -66,6 +68,7 @@ public class VentanaBuscar extends JFrame {
             resultado.append(material.toString() + "\n");
         }
     }
+
     private void mostrarCatalogoEnInterfaz() {
         resultado.setText(""); // Limpiar el área de resultados
         List<MaterialBiblioteca> catalogo = biblioteca.getCatalogo();
@@ -73,9 +76,5 @@ public class VentanaBuscar extends JFrame {
         for (MaterialBiblioteca material : catalogo) {
             resultado.append(material.toString() + "\n");
         }
-        }
-
-
     }
-
-
+}

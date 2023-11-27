@@ -1,4 +1,5 @@
 package guis;
+
 import datos.Biblioteca;
 
 import javax.swing.*;
@@ -7,8 +8,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ventanaInicio extends JFrame implements ActionListener {
-    public ventanaInicio() {
+    private Biblioteca biblioteca;  // Declarar la instancia de Biblioteca
 
+    public ventanaInicio() {
         super("Biblioteca");
         setSize(600, 400);
         setLocationRelativeTo(null);
@@ -38,21 +40,23 @@ public class ventanaInicio extends JFrame implements ActionListener {
 
         add(panel);
 
-        setVisible(true);
+        // Inicializar la instancia de Biblioteca
+        biblioteca = new Biblioteca();
 
+        setVisible(true);
     }
+
     @Override
-       public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e) {
         if (e.getActionCommand().equals("Agregar Nuevos Productos")) {
             ventanaAgregar VentanaAgregar = new ventanaAgregar();
             VentanaAgregar.setVisible(true);
-        }else if (e.getActionCommand().equals("Buscar Productos")) {
-            Biblioteca biblioteca = new Biblioteca();
+        } else if (e.getActionCommand().equals("Buscar Productos")) {
             VentanaBuscar ventanaBuscar = new VentanaBuscar(biblioteca);
             ventanaBuscar.setVisible(true);
         } else if (e.getActionCommand().equals("Registrar préstamos y devoluciones")) {
-            VentanaRegistrar ventanaRegistrar = new VentanaRegistrar();
+            VentanaRegistrar ventanaRegistrar = new VentanaRegistrar(biblioteca);  // Pasar la instancia de biblioteca
             ventanaRegistrar.setVisible(true);
         }
     }
-    }
+}

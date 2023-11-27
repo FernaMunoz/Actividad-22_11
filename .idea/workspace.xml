@@ -4,41 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b5f9213-3e25-4c10-a51e-e9eb291d897e" name="Changes" comment="merge" />
+    <list default="true" id="0b5f9213-3e25-4c10-a51e-e9eb291d897e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_25-11-2023_21_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_25-11-2023_21_23__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datos/Biblioteca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datos/Biblioteca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guis/VentanaBuscar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guis/VentanaBuscar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guis/VentanaLibro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guis/VentanaLibro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guis/VentanaRegistrar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guis/VentanaRegistrar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guis/ventanaAgregar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guis/ventanaAgregar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guis/ventanaInicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guis/ventanaInicio.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Huenchuñir" />
+        <entry key="$PROJECT_DIR$" value="Muñoz" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Valehvvv"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="6da96ec6-754a-4416-a6a2-14631bc54b17" />
-        <option name="url" value="https://github.com/FernaMunoz/Actividad-22_11.git" />
-      </UrlAndAccount>
-    </option>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -49,23 +39,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Huenchuñir",
-    "last_opened_file_path": "C:/Actividad-22_11/src/guis",
-    "onboarding.tips.debug.path": "C:/Users/HP/IdeaProjects/Actividad-22_11/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Huenchuñir&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/HP/IdeaProjects/Actividad-22_11/src/main/java/org/example/Main.java&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Actividad-22_11\src\guis" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Actividad-22_11\src\guis" />
-    </key>
-  </component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -75,126 +56,6 @@
       <option name="presentableId" value="Default" />
       <updated>1700653512657</updated>
     </task>
-    <task id="LOCAL-00001" summary="paquetes">
-      <option name="closed" value="true" />
-      <created>1700687321204</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1700687321206</updated>
-    </task>
-    <task id="LOCAL-00002" summary="ventanas">
-      <option name="closed" value="true" />
-      <created>1700688221017</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1700688221018</updated>
-    </task>
-    <task id="LOCAL-00003" summary="ventanas inicio">
-      <option name="closed" value="true" />
-      <created>1700836837506</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1700836837506</updated>
-    </task>
-    <task id="LOCAL-00004" summary="ventanas">
-      <option name="closed" value="true" />
-      <created>1700847586230</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1700847586232</updated>
-    </task>
-    <task id="LOCAL-00005" summary="ventana agregar producto">
-      <option name="closed" value="true" />
-      <created>1700849928244</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1700849928250</updated>
-    </task>
-    <task id="LOCAL-00006" summary="ventana agregar libro">
-      <option name="closed" value="true" />
-      <created>1700855840109</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1700855840111</updated>
-    </task>
-    <task id="LOCAL-00007" summary="ventana agregar Revista">
-      <option name="closed" value="true" />
-      <created>1700856359004</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1700856359004</updated>
-    </task>
-    <task id="LOCAL-00008" summary="ventana agregar Revista">
-      <option name="closed" value="true" />
-      <created>1700929013955</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1700929013956</updated>
-    </task>
-    <task id="LOCAL-00009" summary="ventana agregar">
-      <option name="closed" value="true" />
-      <created>1700943309675</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1700943309678</updated>
-    </task>
-    <task id="LOCAL-00010" summary="commit">
-      <option name="closed" value="true" />
-      <created>1700959364555</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1700959364555</updated>
-    </task>
-    <task id="LOCAL-00011" summary="commit">
-      <option name="closed" value="true" />
-      <created>1700959378052</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1700959378053</updated>
-    </task>
-    <task id="LOCAL-00012" summary="merge">
-      <option name="closed" value="true" />
-      <created>1700960168729</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1700960168729</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="paquetes" />
-    <MESSAGE value="ventanas inicio" />
-    <MESSAGE value="ventanas" />
-    <MESSAGE value="ventana agregar producto" />
-    <MESSAGE value="ventana agregar libro" />
-    <MESSAGE value="ventana agregar Revista" />
-    <MESSAGE value="ventana agregar" />
-    <MESSAGE value="commit" />
-    <MESSAGE value="merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge" />
   </component>
 </project>

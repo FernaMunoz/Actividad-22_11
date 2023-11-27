@@ -12,7 +12,6 @@ public class VentanaLibro extends JFrame {
     public VentanaLibro(Biblioteca biblioteca) {
 
         setTitle("Agregar Libro");
-
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(600, 400);
         setLocationRelativeTo(null);
@@ -71,32 +70,34 @@ public class VentanaLibro extends JFrame {
         add(panel);
         setVisible(true);
 
-        botonAgregar.addActionListener(e -> {
+        botonAgregar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int id = Integer.parseInt(ID.getText());
+                String titulo = Titulo.getText();
+                String autor = Autor.getText();
+                String isbn = Isbn.getText();
+                String edicion = Edicion.getText();
 
-            int id = Integer.parseInt(ID.getText());
-            String titulo = Titulo.getText();
-            String autor = Autor.getText();
-            String isbn = Isbn.getText();
-            String edicion = Edicion.getText();
+                int numeroAntes = biblioteca.getCatalogo().size();
 
-            int numeroAntes = biblioteca.getCatalogo().size();
+                Libro nuevoLibro = new Libro(id, titulo, autor, isbn, edicion);
 
-            Libro nuevoLibro = new Libro(id, titulo, autor, isbn, edicion);
+                biblioteca.agregarMaterial(nuevoLibro);
 
-            biblioteca.agregarMaterial(nuevoLibro);
+                nuevoLibro.mostrarInformacion();
+                dispose();
 
-            nuevoLibro.mostrarInformacion();
-            dispose();
+                // Imprimir el catálogo después de agregar el libro
+                biblioteca.mostrarCatalogo();
 
-            biblioteca.mostrarBiblioteca();
-
-            int numeroDespues = biblioteca.getCatalogo().size();
-            if (numeroDespues == numeroAntes + 1) {
-                System.out.println("El libro se ha agregado correctamente.");
-            } else {
-                System.out.println("Ha ocurrido un error al agregar el libro.");
+                int numeroDespues = biblioteca.getCatalogo().size();
+                if (numeroDespues == numeroAntes + 1) {
+                    System.out.println("El libro se ha agregado correctamente.");
+                } else {
+                    System.out.println("Ha ocurrido un error al agregar el libro.");
+                }
             }
         });
     }
 }
-
